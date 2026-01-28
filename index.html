@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TT Tours - Premium Tirupati Travels</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- 1. Left-Aligned Slim Luxury Header -->
+    <div class="header-container">
+        <nav class="luxury-nav">
+            <a href="#" class="logo-box">
+                <span class="tt-text">TT</span>
+                <span class="tours-pill">Tours</span>
+            </a>
+
+            <div class="nav-info">
+                <a href="mailto:tttours.tirupati@gmail.com" class="info-link"><i class="fa-regular fa-envelope"></i> tttours.tirupati@gmail.com</a>
+                <a href="tel:8886176669" class="info-link"><i class="fa-solid fa-phone-volume"></i> 8886176669</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61585336349223" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/tirupati_ttours/" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 2. Hero Section -->
+    <section class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="experience-label">18 Years of Excellence</span>
+                <h1 class="hero-title">Pilgrimage Tour Packages by <span>TT Tours</span></h1>
+                <p class="hero-desc">Experience a premium pilgrimage with TT Tours. We specialize in luxury van services and professional travel assistance for your ultimate comfort.</p>
+                <a href="#packages" class="btn-primary" id="viewPackagesBtn">View Packages</a>
+            </div>
+            <div class="hero-image-box">
+                <div class="bg-pattern"></div>
+                <img src="e91de70fdf86de68e3f08a47da44a57b.png" alt="Tour Van" class="van-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Why Choose Us Section -->
+    <section class="why-us">
+        <div class="why-header-row">
+            <h2 class="why-title">Why Choose <span class="tt">TT</span><span class="tours-badge">Tours</span>?</h2>
+            <img src="d892ddc024d7d552a38f65ea13e8d795.png" alt="Travel Icon" class="mini-png">
+        </div>
+
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fa-solid fa-award feature-icon"></i>
+                <h4>18 Years Experience</h4>
+                <p>Trusted by pilgrims since 2006 for expert guidance in Tirupati.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-clock feature-icon"></i>
+                <h4>24/7 Support</h4>
+                <p>We are always here to assist you during your spiritual journey.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-van-shuttle feature-icon"></i>
+                <h4>Premium Fleet</h4>
+                <p>Well-maintained, AC vehicles for a clean and premium experience.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-shield-halved feature-icon"></i>
+                <h4>Verified Drivers</h4>
+                <p>Professional drivers ensuring safety and peace of mind at all times.</p>
+            </div>
+        </div>
+    </section>
+<!-- இந்தப் பகுதியை </section> (Why Choose Us) முடிந்த பிறகு போடு -->
+
+<!-- 4. Packages Section (கார்டுகள் இங்கேதான் வரும்) -->
+<section id="packages" class="packages-section">
+    <div class="why-header-row">
+        <h2 class="why-title">Our Exclusive <span class="tt">Travel</span><span class="tours-badge">Packages</span></h2>
+    </div>
+    <div id="package-grid" class="package-grid">
+        <!-- ஜாவாஸ்கிரிப்ட் மூலம் 46 கார்டுகள் இங்கே தானாக உருவாகும் -->
+    </div>
+</section>
+
+<section id="booking-form" class="combined-footer-section">
+    <div class="footer-container">
+        
+        <!-- இடது பக்கம்: என்குயரி ஃபார்ம் -->
+        <div class="form-side">
+            <div class="form-card">
+                <h3><i class="fab fa-whatsapp"></i> Quick Booking</h3>
+                <p style="font-size: 12px; color: #666; margin-bottom: 20px;">Fill the details below to book your trip via WhatsApp.</p>
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" id="custName" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" id="custPhone" placeholder="Enter phone" required>
+                    </div>
+                    <div class="form-row" style="display: flex; gap: 10px;">
+                        <div class="form-group" style="flex: 1;">
+                            <label>Package</label>
+                            <select id="selectedPkg"></select>
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label>Vehicle</label>
+                            <select id="vehicleType">
+                                <option>Etios / Swift Dzire</option>
+                                <option>Ertiga / Kia Carens</option>
+                                <option>Tavera / Tata Sumo</option>
+                                <option>Tempo Traveller</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Passengers</label>
+                        <input type="number" id="passengers" placeholder="How many persons?" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Confirm via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- வலது பக்கம்: ஃபுட்டர் (Footer with your info) -->
+        <div class="footer-side">
+            <div class="footer-info">
+                <h2 class="tt-text" style="color:var(--primary-orange); font-size: 28px; font-weight: 900; margin-bottom: 10px;">TT <span style="background:var(--primary-orange); color:#fff; padding:2px 10px; border-radius:50px 5px;">Tours</span></h2>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Support Timing:</strong><br>
+                            <span>24×7 Customer Support</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Office Address:</strong><br>
+                            <span>4-31, Govinda Nagar, Tirupati</span><br>
+                            <a href="https://share.google/4eqbUePvMU5ArseRL" target="_blank" style="color: #4285F4; font-size: 12px; text-decoration: none; font-weight: 600;">
+                                <i class="fas fa-map-marked-alt"></i> View on Google Maps
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email ID:</strong><br>
+                            <span>tttours.tirupati@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div>
+                            <strong>Mobile / WhatsApp:</strong><br>
+                            <span>8886176669</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Button -->
+                <div style="margin: 20px 0;">
+                    <a href="https://g.page/r/CUmTy4Wn6rL_EAE/review" target="_blank" class="review-btn">
+                        <i class="fab fa-google"></i> Leave a Google Review ⭐
+                    </a>
+                </div>
+
+                <div class="social-box">
+                    <h4>Follow Us on Social Media</h4>
+                    <div class="social-btns">
+                        <a href="https://www.facebook.com/profile.php?id=61585336349223" target="_blank" class="s-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/tirupati_ttours/" target="_blank" class="s-btn"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+    </div>
+</section>
+    <!-- 6. Full Width Bottom Footer -->
+    <footer class="main-site-footer">
+        <div class="footer-bottom-content">
+            <p>© 2024 TT Tours & Travels. Quality Service Guaranteed.</p>
+        </div>
+    </footer>
+
+    <!-- JS Link -->
+    <script src="main.js"></script>
+</body>
+</html>
